@@ -38,7 +38,7 @@ if prompt := st.chat_input("what is on your mind?"):
 
         stream=ollama.chat(
             model="llama3.2",
-            messages=[{"role":"user","content":prompt}],
+            messages=st.session_state.messages,
             stream=True
         )
 
