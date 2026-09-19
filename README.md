@@ -1,24 +1,24 @@
-# 🤖 Local LLM Assistant
+# Local LLM Assistant
 
 A privacy-focused local AI assistant built with **Python, Streamlit, Ollama, and Llama 3.2**. The application provides a web-based chat interface with real-time response streaming and session-based conversation history.
 
-## ✨ Features
+## Features
 
-- 💬 Interactive conversational interface
-- 🧠 Local inference using Llama 3.2
-- ⚡ Real-time streaming responses
-- 📝 Session-based conversation history
-- 🔒 Local execution through Ollama
-- 🚫 No external AI API required
+- Interactive conversational interface
+- Local inference using Llama 3.2
+- Real-time streaming responses
+- Session-based conversation history
+- Local execution through Ollama
+- No external AI API required
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Python** — Application logic
 - **Streamlit** — Web interface
 - **Ollama** — Local LLM runtime
 - **Llama 3.2** — Language model
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 Local_LLM/
@@ -28,7 +28,7 @@ Local_LLM/
 └── .gitignore
 ```
 
-## 📋 Prerequisites
+## Prerequisites
 
 Make sure the following are installed:
 
@@ -42,7 +42,7 @@ Download the Llama 3.2 model:
 ollama pull llama3.2
 ```
 
-## ⚙️ Installation
+## Installation
 
 Clone the repository:
 
@@ -69,7 +69,7 @@ Install the required dependencies:
 pip install -r requirements.txt
 ```
 
-## ▶️ Run the Application
+## Run the Application
 
 Start the Streamlit application:
 
@@ -83,7 +83,7 @@ The application will be available at:
 http://localhost:8501
 ```
 
-## 🔄 How It Works
+## How It Works
 
 ```text
 User
@@ -103,26 +103,26 @@ Streamlit UI
 
 The user enters a prompt through the Streamlit interface. The application sends the prompt to the locally running Ollama service, which uses Llama 3.2 to generate the response. The generated response is streamed back to the interface in real time.
 
-## 🔐 Privacy
+## Privacy
 
 The Llama 3.2 model runs locally through **Ollama**. The application does not require an external AI API key to generate responses.
 
-## 🚧 Future Improvements
+## Future Improvements
 
-- [ ] Persistent conversation history
-- [ ] PDF and document upload
-- [ ] Retrieval-Augmented Generation (RAG)
-- [ ] Multiple model selection
-- [ ] Improved error handling
-- [ ] Docker support
-- [ ] Chat export
+- Persistent conversation history
+- PDF and document upload
+- Retrieval-Augmented Generation (RAG)
+- Multiple model selection
+- Improved error handling
+- Docker support
+- Chat export
 
-## 📚 Learning Project
+## Learning Project
 
 This project was developed to explore the fundamentals of building applications around locally hosted Large Language Models (LLMs).
 
 The initial implementation follows a tutorial-based approach and will be progressively extended with additional AI engineering features.
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License.
