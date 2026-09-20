@@ -65,7 +65,7 @@ def request_response():
         )
 
         for chunk in stream:
-            content = chunk.get("message", {}).get("content", "")
+            content = chunk["message"]["content"]
 
             if content:
                 full_response += content
@@ -77,8 +77,7 @@ def request_response():
         response_placeholder.empty()
         st.session_state.last_error = get_error_message(error)
         st.session_state.retry_request = True
-        st.error(st.session_state.last_error)
-        return
+        st.rerun()
 
     st.session_state.messages.append({
         "role": "assistant",
