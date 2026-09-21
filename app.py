@@ -88,7 +88,7 @@ def request_response():
 
 
 if st.session_state.retry_request:
-    st.error(st.session_state.last_error)
+    st.error(f"Unable to generate a response. {st.session_state.last_error}")
 
     if st.button("Retry", type="primary"):
         with st.chat_message("assistant"):
