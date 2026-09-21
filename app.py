@@ -92,7 +92,8 @@ if st.session_state.retry_request:
 
     if st.button("Retry", type="primary"):
         with st.chat_message("assistant"):
-            request_response()
+            with st.spinner("Generating response..."):
+                request_response()
 
 
 if prompt := st.chat_input("What is on your mind?"):
@@ -105,4 +106,5 @@ if prompt := st.chat_input("What is on your mind?"):
     st.chat_message("user").write(prompt)
 
     with st.chat_message("assistant"):
-        request_response()
+        with st.spinner("Generating response..."):
+            request_response()
